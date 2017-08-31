@@ -20,9 +20,10 @@ else
         fi 
 
 xrandr > tmp
+
 clear
 
-if grep -q "DVI-0 connected primary" tmp; then
+if grep -q "DVI-0 connected" tmp; then
     rm tmp
     echo "У вас DVI монитор"
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -31,7 +32,7 @@ if grep -q "DVI-0 connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"
 
-elif grep -q "VGA-1 connected primary" tmp; then
+elif grep -q "VGA-1 connected" tmp; then
     rm tmp
     echo "У вас VGA монитор"
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -40,7 +41,7 @@ elif grep -q "VGA-1 connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"
     
-elif grep -q "VGA-0 connected primary" tmp; then
+elif grep -q "VGA-0 connected" tmp; then
     rm tmp
     echo "У вас VGA монитор"
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -49,7 +50,7 @@ elif grep -q "VGA-0 connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"    
     
-elif grep -q "LVDS connected primary" tmp; then
+elif grep -q "LVDS connected" tmp; then
     rm tmp
     echo "У вас встроенный монитор"
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -58,7 +59,7 @@ elif grep -q "LVDS connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"
 
-elif grep -q "HDMI-0 connected primary" tmp; then
+elif grep -q "HDMI-0 connected" tmp; then
     echo "У вас HDMI монитор"
     rm tmp
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -67,7 +68,7 @@ elif grep -q "HDMI-0 connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"
 
-elif grep -q "HDMI-1 connected primary" tmp; then
+elif grep -q "HDMI-1 connected" tmp; then
     echo "У вас HDMI монитор"
     rm tmp
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -76,7 +77,7 @@ elif grep -q "HDMI-1 connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"
 
-elif grep -q "DisplayPort-0 connected primary" tmp; then
+elif grep -q "DisplayPort-0 connected" tmp; then
     echo "У вас DisplayPort монитор"
     rm tmp
     echo "Введите желаемое значение яркости от 0.1 до 1"
@@ -85,7 +86,7 @@ elif grep -q "DisplayPort-0 connected primary" tmp; then
     clear
     echo "Выбрана яркость равная = $x"
 
-elif grep -q "DisplayPort-1 connected primary" tmp; then
+elif grep -q "DisplayPort-1 connected" tmp; then
     echo "У вас DisplayPort монитор"
     rm tmp
     echo "Введите желаемое значение яркости от 0.1 до 1"
